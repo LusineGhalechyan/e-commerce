@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import NavMenu from "./components/NavMenu/NavMenu";
+import Interior from "./components/pages/Interior/Interior";
+import NotFound from "./components/pages/NotFound/NotFound";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Furniture from "./components/pages/Furniture/Furniture";
+import CartBasket from "./components/CartBasket/CartBasket";
+import Purchase from "./components/Purchase/Purchase";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavMenu />
+
+      <Switch>
+        <Route path="/" exact component={Interior} />
+        <Route path="/furniture" exact component={Furniture} />
+        <Route path="/purchase" exact component={Purchase} />
+        <Route path="/checkout" exact component={CartBasket} />
+        <Route path="/404" exact component={NotFound} />
+        <Redirect to="/404" />
+      </Switch>
     </div>
   );
 }

@@ -1,0 +1,44 @@
+.navBarContainer {
+  background: transparent;
+  z-index: 55775577;
+
+  .navԼօգօ {
+    display: flex;
+    margin-left: 100px;
+  }
+  .navLinks {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    margin: -50px 150px 0 0;
+    .navLink {
+      color: #000;
+      margin: 0px 10px 50px 10px;
+    }
+    .activePage {
+      color: #9b0202 !important;
+    }
+    a {
+      font-size: 25px;
+      text-decoration: none;
+    }
+  }
+  .cartSearchContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 1490px) {
+  .navԼօգօ {
+    width: 100% !important;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .navLinks {
+    position: relative;
+    margin-top: 5px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 15px !important;
+  }
+}

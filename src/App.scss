@@ -1,0 +1,18 @@
+.MuiPaper-root {
+  background-color: #9b0202 !important;
+}
+
+.MuiButtonBase-root {
+  font-weight: normal !important;
+  color: #fff !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+.MuiList-margin {
+  margin-bottom: 20px !important;
+}
+
+.MuiButton-root:hover {
+  text-decoration: none !important;
+}

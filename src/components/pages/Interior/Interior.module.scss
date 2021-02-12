@@ -1,0 +1,53 @@
+.interiorContainer {
+  text-align: center;
+  font-weight: 100;
+
+  .interior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 500px;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  h1 {
+    font-size: 65px;
+    font-weight: 100 !important;
+    color: #9b0202;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .interiorButton {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    width: 250px;
+    color: #000 !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .interiorArrowDown {
+    color: #9b0202;
+    margin: 20px auto 400px auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1490px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  .interiorButton {
+    padding: 5px !important;
+    width: 150px !important;
+  }
+}

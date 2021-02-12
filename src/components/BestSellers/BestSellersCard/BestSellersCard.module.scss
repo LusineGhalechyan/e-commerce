@@ -1,0 +1,40 @@
+.cardTextContent {
+  width: 90%;
+  height: 150px;
+  font-size: 22px;
+  position: relative;
+  margin: -50px auto;
+  background: #eee;
+  .cardText {
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+  .cardItemPrice {
+    color: #9b0202;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}
+
+.bestSellersCard {
+  text-align: center;
+  margin: 50px;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  .cardButton {
+    width: 135px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 25px;
+    position: relative;
+    background: #9b0202;
+    text-transform: capitalize;
+    &:hover {
+      background: #9b0202;
+    }
+
+    .cardIcon {
+      margin-right: 10px;
+    }
+  }
+}

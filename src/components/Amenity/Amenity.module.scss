@@ -1,0 +1,41 @@
+.amenityContainer {
+  text-align: center !important;
+  h3 {
+    font-size: 35px;
+    color: #9b0202;
+    font-weight: 100;
+  }
+  p {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .amenityImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imgArrow h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+  .livingRoom {
+  }
+  .kitchen,
+  .bathRoom {
+    margin-left: 20px;
+  }
+  .bedRoom {
+    margin-top: 45px;
+  }
+  .bathRoom {
+    margin-top: -330px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .bathRoom {
+    margin-top: 30px !important;
+  }
+}

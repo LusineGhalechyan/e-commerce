@@ -1,0 +1,36 @@
+.purchaseContainer {
+  text-align: center;
+  margin-bottom: 300px;
+  .purchaseImg {
+    position: relative;
+    top: 150px;
+  }
+  .purchaseDetailsContainer {
+    display: inline-block;
+    background-color: #eee;
+    padding: 50px 100px;
+    border-radius: 35px;
+    margin-left: -40px;
+    box-shadow: 0 0 10px #b3b3b3;
+    .text {
+      font-size: 23px;
+    }
+    .price {
+      color: #9b0202;
+      font-size: 25px;
+    }
+    .purchaseButton {
+      padding: 15px 50px;
+      font-size: 20px;
+      text-transform: capitalize;
+      background-color: #9b0202;
+    }
+  }
+}
+
+@media (max-width: 1490px) {
+  .purchaseDetailsContainer {
+    display: flex;
+    margin-top: 70px;
+  }
+}
